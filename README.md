@@ -1,1 +1,0 @@
-# Salesforce-certified-Marketing-Administrator
