@@ -231,5 +231,64 @@ salesforce에서 자체적으로 만들 수 있는 <U>노코딩 페이지 개발
 ![Alt text](image-4.png)
 
 ## 18. Marketing cloud admin이 연락처 중 일부 고객들에게만 메일을 보내기 위한 방법
-> Salesforce report를 사용해서 레코드를 filter하면 원하는 범위의 고객들에게만 메일잉 전송된다.
+> Salesforce report를 사용해서 레코드를 filter하면 원하는 범위의 고객들에게만 메일이 전송된다.
+
+## 19. 세일즈포스에서 정의하는 강력한 추가 보안 사항은?
+> Biometric authentication
+
+## 20. Journey structure를 복제해서 다른 아이디에서도 해당 저니를 편집하기 위해서 사용해야 될 서비스는?
+> Journey Template
+
+## 21. DDOS 공격을 방지하기 위해서 사용 가능한 기능은?
+> IDS(Intrusion detection System)
+
+## 22. 모든 구독자에게 연락하기 위해 필요한 키 값은 어떤 데이터인가?
+> 18-digit Contact ID
+
+## 23. Marketing Cloud contact Builder에서 사용될 수 있는 속성의 최대치는?
+> unlimited
+
+## 24. Marketing cloud automation studio에서 활용될 수 있는 자동화의 종류는 어떤 것이 있을까요?
+> Journey Automation
+
+## 25. 몇몇 이메일 전송에서 마케팅 클라우드 플랫폼으로 push back 이 되지 않는 것을 확인 했고 admin이 Marketing Cloud Connection이 정상적으로 작동되고 있는 것을 확인 했을 때, admin은 data extension에서 어떤 것을 확인해야 할까요?
+> The send Relationship links SubscriberKey to Subscribers on EmailAddress
+
+## 26. 마케팅 클라우드 Journey 빌더의 기능인 것은?
+> Journey Analytics
+
+## 27. NTO는 외부의 데이터베이스를 통해, 매일 주기적으로 Marketing Cloud SFTP에 드롭된다. 하지만, NTO는 데이터베이스에서 예상하는 양만큼의 구독자들에게 전송되는 이메일의 수가 해당 되지 않음을 발견한다. 어떠한 기능을 사용한다면 목표하는 데이터 스트럭쳐로 모든 레코드가 등록됨을 모니터링 할 수 있을까?
+> Run Completion within the File Drop Automation
+
+## 28. Automation studio 가 하는 액티비티인 것은?
+Data Extract
+
+
+## 29. Marketing cloud amdin이 지정된 IP에 점점 보내는 이메일 양을 늘리기 위해서(IP warming= 지정된 ip로 보내는 이메일을 사전에 정의된 규칙에 따라 양을 늘리는 것) 작업을 진행하 때, Segmentation의 어떤 옵션이 ip warming과 일치하는가?
+> 도메인을 분할함으로써 각 이메일 제공자들의 발송의 수를 줄인다.
+Segment by domain to limit number of sends to each email
+
+## 30. XYZ 회사는 Marketing cloud를 활용하여 transactional email을 보낼 때, marketing cloud admin은 어떤 세팅을 고려해서 해당 작업을 진행해야 할까?
+1. The frequencies of email
+2. The compliacnes with email regulation
+3. The integration with the company's CRM System
+
+## 31. Marketing cloud admin은 어떠한 유저도 Marketing Cloud user credentials을 가지고 API에 대한 접근을 원치 않을때, 어떤 보안 정책이 적합할 것인가?
+
+> Deselect 'Enable Username and PAssword for Web Service'
+
+## 32. 이메일 수신 제공에 동의한(subscriber) 사람들의 이메일을 랜딩 페이지에 URL 형태로 안전한게 전송하는 방법에 어떤 것이 있을까?
+> Using the CloudPagesURLAMPscript function
+
+## 33. NTO는 비즈니스 유저들에게 Maketing cloud의 사용권한을 확장하려고 할 때, Marketing cloud에서 권한을 직접 수정하는 방법 외에, 확장하려고 할 때, 어떤 기능을 사용하면 될까?
+> Distributed Marketing
+
+## 34. Marketing Cloud Admin은 모든 이메일에 UTM을 확장시키고 싶을 때, 얻너 기능을 사용하면 될까요?
+> Parameter Manager
+
+## 35. what could be the reason for a customer not receiveing emails from other business units after using the default Profile Center link in Marketing Cloud to unsubscribe?
+
+> The busines unit unsubscribe setting could have triggered an enterprise-level unsubscribe
+
+## 36. 
 
