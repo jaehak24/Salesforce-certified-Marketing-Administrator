@@ -290,5 +290,8 @@ Segment by domain to limit number of sends to each email
 
 > The busines unit unsubscribe setting could have triggered an enterprise-level unsubscribe
 
-## 36. 
+## 36. NTO wnats a data model in Marketing cloud which will prevent them from duplicationg, or even triplicating, records. How should the unique identifiers of the data model be set up if the MobilePush and Email Channels are used within the same account?
+> Strategiaclly control the Contact Key values and tie records together across channels using this key.
+
+## 37.
 
