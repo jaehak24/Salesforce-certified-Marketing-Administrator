@@ -171,7 +171,82 @@
 >> add만 한다면 기존 데이터의 키 값과 일치하는 값들의 수정이 이루어지지 않으므로 Update문이 추가되어야 한다.
 
 
-##
+## 43. NTO was given a set of requirements from their governce team to protect against misuse of customer data. One item mandated(위임) Marketing Cloud users should NOT be able to export data without approval from the system. Which feature would allow compliance with this requirement.
+
+> Data Export Control
+>> Data Export Control을 사용하게 된다면 해당 데이터를 전송하는 과정에서 허락을 요청하는 과정을 추가할 수 있다. 
+
+### 44. Which of the following is a type of engagement in Marketing Cloud's Journey Builder?
+> All of the above
+>> * Email Engagement 
+>> * Mobile Engagement
+>> * Social Media Engagement
+
+## 45. Which of the following is a way to personalize SMS messages in Marketing Cloud?
+> All of the above
+>> * Using the recipient's first name in the message body
+>> * Including the recipient's location in the message
+>> * Including the recpient's purchase history in the message
+
+## 46. XYZ Company wnats to ensure their emails are not marked as spam by ISPs. What would be achieved by implementing a DomainKey Identified Mail(DKIM) signature?
+> Verifies the authenticity of the email message and sender
+
+## 47. NTO Trail Outfitters security team has password policies they want enforced within Marketing Cloud. Which policies could the Marketing cloud admin configure in Setup?
+
+> Minimu Password Length, Password Complexity, Password History, Expiration Period
+
+## 48. Marketing Cloud admin is asked to add a s et of four query strings automatically to all the links in an email sent via Email Studio. Which solution should the admin suggest?
+> Parameter Manager
+
+## 49. Which of the following is a type of segmentation in Marketing Cloud?
+> All of the above
+>> Demographic
+>> geographical
+>> Behavioral
+
+## 50. Which of the following is a feature of Marketing Cloud's MobilePush platform?
+
+> SMS messaging
+
+#### 51. Marketing manager requests an email. once a week, with high-level metric in a standarlization format. Specifically, the manager wants to know how many emails were sent in the last week. What location and activity would allow the Marketing Cloud admin to complete this request?
+> Email Studio: Select the "Account Send Summary" in Tracking Reports and schedule a weekly report to be sent
+
+## 52. NTO has a mobile app. Which product would allow them to send push notifications to customers with their mobile app?
+> Group connect
+>> 특정 고객들에게 푸쉬 알람을 줄 수 있도록 해주는 도구
+
+### 53. Marketing Cloud admin at a bank is asked to avoid storing sensitive data in the cloud. this data will only be sen to MArketing Cloud to execute a send. Which would the admin use to meet this requirement?
+> Field Level Encryption
+
+#### 54. NTO uses data extension for all of their email audiences. A customer reports they updated their email address week ago but continues to receive the NTO Daily Digest email at their old address. The Marketing Cloud admin has confirmed the new email address is present in the appropriate data extension. What consideration could account for this behavior?
+> The data extension was not configured as sendable(새로운 계정에 대해서 sendable 속성을 추가하지 않아서 전송이 되지 않는 것으로 사료된다.)
+
+## 55. NTO는 그들의 Marketing Cloud account에 인증되지 않은 API 접근이 걱정된다. Which feature would they enable to assist in reducing threats from malicious API attack?
+> IP login Allowlist(API의 비정상적인 접근을 막기 위해서는 화이트리스트에만 있는 IP만이 인증 받을 수 있는 절차를 추가로 설정하면 된다.)
+
+## 56. What does Marketing Cloud authenticate when a user logs in through the user interface?
+
+> If the user is loggin in from an aloowlisted IP address
+
+### 57. Which of the following is a feature of Marketing Cloud's Web Studio platform?
+> Web Analytics Tracking 
+
+### 58. NTO is warming a new Didcated IP address, and they need to monitor deliverability across major ISPs. Which bounce type would be indicative of the ISP's view of their sending reputation?
+> Block
+>> 유저의 전송자의 신용이 낮다고 판단되면 ISP는 이를 차단하게 된다. 이 단계를 우리는 Blockdㅣ라 한다.
+>> Soft bounce는 일시적인 전송 문제를 말한다. 
+>> Technical bounce는 기술적인 문제로 인해서 생기는 문제를 말한다.
+
+
+### 59. Which statement should be considered before using Goals in Journey Builder?
+> Goals can be used with multiple types of activities
+>> Goal을 설정할 때, Goal의 형태는 SMS, email, push notification, 등등의 여러 형태로 나올 수 있으므로 설정에 대해서 신중이 해야 한다.
+
+### 60. Which of the following is a way to measure the effectiveness of a Marketing Cloud social media advertising campaign? 
+> CTR
+>> Bounce rate 같은 경우는 마케팅 성공 측정보다는 마케팅 실패율로 보는 것이 맞다 conversion 같은 경우는 effectuveness로 측정 될 수 있지만 고객이 특정 field에 도착했는지의 과정으로도 측정될 수 있어서 CTR보다는 더 정확한 지표가 될 수 는 없다.
+
+ 
 
 
 
