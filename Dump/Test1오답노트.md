@@ -293,5 +293,120 @@ Segment by domain to limit number of sends to each email
 ## 36. NTO wnats a data model in Marketing cloud which will prevent them from duplicationg, or even triplicating, records. How should the unique identifiers of the data model be set up if the MobilePush and Email Channels are used within the same account?
 > Strategiaclly control the Contact Key values and tie records together across channels using this key.
 
-## 37.
+## 37. Which of the following is a type of segementation in Marketing Cloud's mobileConnect Platform?
+> Geographic Segmentation
+
+> 다른 2개의 옵션 같은 경우는 Mobile 뿐만 아니라 다른 플랫폼에서도 가능하기 때문에 문제가 없다.
+
+## 39. Which of the following is a type of data retention policy in Marketing Cloud?
+
+> Contact Delete
+
+Data extract 같은 경우 데이터를 받아들이기만 할 뿐 저장하지는 않는다.
+> Data retention policy~ 데이터 보유 기간 정책
+
+## 40. what is the maximum number of subscribers that can be added to a single list in Marketing Cloud's MobileConnect platform?
+> Unlimited
+
+
+## 41. what does MArketing Cloud authenticate when a user logs in through the user interface?
+> IF the user has a valid username and password
+> If the user has enabled two-factor authentaication
+
+## 42. Which of the following is a way to measure the success of a Marketing Cloud email campaign?
+> All of the above 
+
+## 43. Which of the following is a feature of Marketing Cloud's Content Builder Platform?
+> Social media publishing
+
+## 44. MArketing Cloud admin notices out of the last several sends. Send Log data for a recent A/B test send was NOT recorded. How could the admin ensure send data is recorded?
+
+> Send logging is enabeld for the send
+
+## 45. Which of the following is a way to improve email open rates in Marketing cloud?
+> Using an attention-grabbing subject line
+
+## 46. What are entry source types for Journey Builder?
+> Data extension, Email List, API Event, Data Based event
+
+## 47. What is the maximum number of items that can be included in Marketing Cloud's Content Builder?
+> Unlimited
+
+## 48. NTO wants to include a subscriber's email address in a URL paratmeter for a landing page in a promotional email. Which Marketing Cluod feature provides secure transmission of this data? 
+
+> The cloudPagesURL AMPscript function B)The web Analytics connector
+
+## 49. NTO has Marketing Cloud users who need data extension View and Update permissions for campaigs realted to B2C sales, but not any permissions for campaigns related to B2B sales. How should they accomplish this?
+
+> Create Seperate folders and add permissons
+
+## 50. Markteting Cloud admin is tasked with requesting Marketing Cloud Connect Multi-Org enablement. What consideration should be given to the preference/profile centers for this integration?
+
+> Profile/ preference centers are automatically created for each business unit connected through Multi-Org
+
+## 51. NTO installed Query Studio for Marketing Cloud, however users are reporting they do NOT have access. How should the Marketing Cloud admin ensure users have access? 
+
+> Allow access package access on appropriate roles
+
+### 52. NTO runs a nightly automation consisting of a File Transfer and a File Import. Following an update from the engineering team, the automation begna failing. The marketing Cloud admin suspects the CSV file now has an invalid format. How could the admin receive a file of the bad data rows to confirm this theory? 
+> Move the File Transfer to its own automation and include a notification email address.
+
+
+### 53. A user is unable to send an email in Marketing Cloud and asks the admin to review their permissions. Upon review, the admin sees that the user has been assigned three roles: Content Creator, Data Management, and Marketing Cloud Viewer. What action should the admin take to reolve the issue and aloow the user to send an email?
+>Edit the user's permission to include the 'Send' Permission
+
+### 54. NTO hired a new Marketing Cloud admin, who wsa told all emails come from [email protected] The previous admin did not leave any documentation. What should confirm a Sender Authentication Package(SAP) has been set up on the account?
+
+> Upon receiving an email, all tracked links start with click. email.not.com.
+
+## 55. Which of the following is a feature of the Social Studio platform? 
+> Social Listening
+
+## 56. A marketing Cloud admin is asked to understand how a certain content area within a Triggerd Send Email is performing . Which report should be used?
+> Impression Tracking for Triggered sends
+
+## 57. Which activity should be used for Multivariate content testing within Journey Builder?
+> Decision Split
+
+> when it comes to testing activity should, we should test with the outcome from variate testing material, not with the inputs. So the answer is Decision split not Engagemnet Testing
+
+## 58. A service CLoud admin runs a report to see the total number of cases in their, but the number seems lower than expected . They have  50,000 open cases and 10,000 closed cases. Why would the total casese lower than the sum of open and closed cases?
+> Some cases may have been deleted or merged
+
+## 59.NTO wants a business analyst to import contact lists. The anlaytics has the following Marketing CLoud roles: Marketing Cloud Channel Manager and Marketing Cloud Viewer. the analst logger in but is unable to import contact lists. How should the user be updated to allow the analyst the appropriate aceess?
+> Add marketing Cloud Security Administrator
+
+## 60. Which of the following is a feature of Marketing Cloud's Data Designer?
+> Data modeling
+
+## 61.  Maketing Cloud admin wants to exclude certain Contacts from a extension before sending an email. What should the admin do to ensure only specific Contacts are included in the email?
+
+> Filter records on a Boolean field
+
+### 62. A new employee is hired into the role of marketing analyst. This user should have acess to all tracking data in Marketing Cloud,But no access to any send activities. Which two default User Role should be applied to this new user which provides this access to all channels, keeping the arinciple of least privilege in mind?
+
+> Data manager and Markeing Cloud viewer
+
+## 63. Maketing Cloud admin wants tot automatically unsubscribe customers who respond to marketing emails asking to be romved from the mailing lists. Which step hould the admin take to enable this functionlity?
+> Select Unsubscribe Manual Requessts in Reply Mail Management
+
+## 64. NTO wants to use Synchronized Data Sources to sync Contact data from Salesforce CRM. However, they only want to sync records they would be able to send to reduce the amount of data being brought over. Which filtering option could be used when configuring the Contact synced object?
+
+>  Select all records where HasOpted OutofEmail is FALESE
+
+## 65.  What is the maximum number of columns that can be added to a single data extension in Maketing Cloud?
+> Unlimited 
+
+## 66. NTO wnats to decrease its Session Timeout from 8 hours to 20 minutes. Where should this update be made?
+
+> Setup > Security > Security Settings
+
+## 67. Marketing Cloud admin is configuring Social Studio to manage social media accounts. What prerequisite for configuring Social Studio should the admin consider?
+
+> Access to social media accounts
+
+
+
+
+
 
