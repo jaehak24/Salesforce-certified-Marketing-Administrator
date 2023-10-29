@@ -159,4 +159,7 @@
 > Data management
 
 
+dump test 참조
 
+
+https://www.exam-answer.com/marketing-cloud-admin-tracking-extract-accented-characters
