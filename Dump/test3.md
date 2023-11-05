@@ -142,7 +142,7 @@
 ## Marketing Cloud admin wants to create a <U>suppression list for hard-bounced email addresses</U>. Where the details be found?
 > Bounce data View
 
-##### Marketing Cloud admi nhas noticed a File Drop Automation has been failing on the Import File activity. The automation is configured with a filename pattern, so the filename is expected to begin with customer_import. The import is configured to look for a file named customer import_%%Year%%%%Month%%%%Day%%.csv, however, the admin notices the filenames include seconds and milliseconds. How should the admin fix the issue?
+##### Marketing Cloud admin has noticed a File Drop Automation has been failing on the Import File activity. The automation is configured with a filename pattern, so the filename is expected to begin with customer_import. The import is configured to look for a file named customer import_%%Year%%%%Month%%%%Day%%.csv, however, the admin notices the filenames include seconds and milliseconds. How should the admin fix the issue?
 > USE %%6Filename_From_trigger%% in the Import File Activity
 
 
