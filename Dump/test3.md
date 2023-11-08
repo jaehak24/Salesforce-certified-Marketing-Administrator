@@ -158,13 +158,13 @@
 ## Marketing Cloud admin has been asked to update theri Marketing Cloud SFTP user password. Where in Setup could they accomplish this task?
 > Data management
 
-## What are two possible outcomes when "Send as Multipart MIME" is selected during the send process? Choose 2 answers
-
-> Open and click activity are tracked in either version
-
-> An auto-generated tex version will be sent with your HTML email.
 
 dump test 참조
 
 
 https://www.exam-answer.com/marketing-cloud-admin-tracking-extract-accented-characters
+
+
+덤프 테스트 참조
+
+https://www.freecram.net/question/Salesforce.Marketing-Cloud-Administrator.v2022-05-12.q62/a-customer-wants-to-automate-a-series-of-three-emails-as-part-of-a-membership-renewaldrip-campaign-email
