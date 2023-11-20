@@ -455,7 +455,18 @@ https://www.examgo.com/exams/salesforce/marketing-cloud-administrator/
 #### 102. As part of their breand guidelines, NTO uses a custom brand font for all print marketing materials. NTO wants to use their custom brand font in email as well. What is the recommended best practice for font usage in email?
 > Use a web-safe font for text that closely matches the brand's custom font.
 
-#### 103. 
+#### 103. A customer is developing a new eCommerce section of their website and plans to leverage transactional data in customer journeys. Which two Marketing Cloud features will support this effort?
+> Web analytic connector
+
+#### 104. customer needs to link demographic information to its contat model in Contact builder. What type of relationship should be uesd?
+> one- to- many
+
+#### 105. Which two statements are correct about Send Logging? Choose 2 answers
+> AMPScript can be used to pull data from Send Logs for use within emails
+> SQL Query Activities can reference Send Logs in combination with system data views
+
+
+#### 106.
 
 
 
