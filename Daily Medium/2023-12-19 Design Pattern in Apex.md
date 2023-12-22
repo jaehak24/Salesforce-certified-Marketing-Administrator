@@ -1,6 +1,6 @@
 # Design Pattern in Apex
 
-세일즈 포스 개발 측면에서, 효율성과 확장성을 가장 중요한 개발 덕목으로 보는 경우가 많다. 그렇기 때문에 해당 덕목에 맞는 개발 디자인 패턴에 대해서 어느 정도 인지하고 이를 통해 개발하는 것에 대해서 어느정도 익숙해지는 운동을 위해 좋은 장비를 갖고 하는 것처럼 좋은 방법이다.
+세일즈 포스 개발 측면에서, 효율성과 확장성을 가장 중요한 개발 덕목으로 보는 경우가 많다. 그렇기 때문에 해당 덕목에 맞는 개발 디자인 패턴에 대해서 어느 정도 인지하고 이를 통해 개발하는 것에 대해서 어느정도 익숙해지는 것은 운동을 위해 좋은 장비를 갖고 하는 것처럼 좋은 방법이다.
 
 # APEX 디자인 패턴의 큰 3 분류
 
@@ -36,7 +36,7 @@
 
 
 ## 3. Behavioral Patterns
-> Behavioral Patterns는 오브젝트의 상호관계와 책임에 대한 관리를 하고 있디. 오브젝트 간의 데이터 교환에 대해서 패턴을 묘사하고 목적에 따라 코드를 설계할 수 있게끔 도와준다. 자주 사용되는 패턴으로는 다음과 같이 있다.
+> Behavioral Patterns는 오브젝트의 상호관계와 책임에 대한 관리를 하고 있다. 오브젝트 간의 데이터 교환에 대해서 패턴을 묘사하고 목적에 따라 코드를 설계할 수 있게끔 도와준다. 자주 사용되는 패턴으로는 다음과 같이 있다.
 
 1. Observer Pattern
 
@@ -51,7 +51,7 @@
 
 ## Singleton Desired Pattern
 
-Singleton ensures that a class has only one instance sand provides global point of acess to that instance. Regardless of how many times you reques an instance of the singleton class you'll always get the same instance. Aby part of yout app can easily reference and interact with the Singleton instance. 세일즈포스와 같은 multi-tenanat(다대다 관계)에서는 자원을 지나치게 빈번히 사용하는 것은 적절치 못하다.
+Singleton ensures that a class has only one instances and provides global point of acess to that instance. Regardless of how many times you request an instance of the singleton class you'll always get the same instance. Any part of your app can easily reference and interact with the Singleton instance. 세일즈포스와 같은 multi-tenanat(다대다 관계)에서는 자원을 지나치게 자주 접근하는 것은 옳기 적절치 못하다.
 
 > 싱글톤 예제
 
@@ -61,7 +61,13 @@ Singleton ensures that a class has only one instance sand provides global point 
 ### 세일즈포스에서 실사례 예시
 1. Configuration Setting: The singleton pattern is often used to manage configuration settings for Salesforce applications. For example, you might store API integration keys, autherntiaction credentials, or custom applicaiton settings in a Singleton instances. <b>This ensures that configuration data is loaded and available only once throuhghout the application's lifecycle</b>, preventing unnecessary redundant data access. 
 
-2. Governor Limits Management: Singleton can be employed to centralize and manage governor limit tracking, helping developers stay within these limits while executing complex operations. 
+2. <b>Governor Limits</b> Management: Singleton can be employed to centralize and manage governor limit tracking, helping developers stay within these limits while executing complex operations. 
 
-3. 
+3. <b>Custom Logging</b>: Implementing custom logging in Salesforce is a common requirement. The Singleton pattern allows you to create a single logging instance that records and manages logs across your application.
+
+4. <b>Global Utility Function</b>: Singleton can encapsulate global utility functions that are shared accross various components of your application. These functions might include data formatting, encryption, or other common tasks.
+
+
+### Problem Scenario
+ 
 
