@@ -73,4 +73,62 @@ ex
 > Only day, day and time, only time
 
 ## 12. enum
+> 기존의 enum과 다르게, 값에 대한 초기화를 하지 않고 선언을 한다. 변수를 선언하게 되면 
+
+![Alt text](image.png)
+
+> 만약, 값을 정의하고 싶다면 다음과 같이 값을 정의 해 주어야 한다.
+
+> Integer enumOrd=myEnums.Enum3.ordinal();
+
+## 13. List
+
+String으로 된 리시트 선언의 예제
+> List<String> myStrings=new List<String>();
+
+객체를 정의하듯이 선언을 해주어야 하기 때문에, 까다로움이 조금 있다.
+
+또, 다른 방법으로 myStrings를 선언하게 된다면, 다음과 같이 선언하게 된다.
+> String[] myStrings=new List<String>();
+
+또, 다른 대체 방법으로 리스트를 만든다면 값들을 다음과 같이 초기화하면 된다.
+> List<String> myStrings=new List<String> {'String1','String2','String3'};
+
+또, 다른 대체 방법으로 C++에서 vector를 사용해서, 값을 스택 방식으로 추가 하듯이
+
+List<String> myStrings=new List<String>();
+mystrings.add('String1');
+mystrings.add('String2');
+mystrings.add('String3');
+
+많은 Lightning Experince를 테이블과 연결하면서 SOQL 쿼리문을 사용하게 해당 쿼리문을 통해서 불러온 데이터는 사실 리스트의 형태로 가져와진다. 예를 들어 다음과 같이 리스트를 선언할 수 있다.
+
+List<Account> myAccounts=[SELECT Id, Name FROM Account];
+
+이것도 마찬가지로, 배열과 같이 인덱스의 시작은 0으로 시작되기 때문에 다음과 같은 방법으로 첫번째 계정에 접근할 수 있다.
+
+> List<Account> myAccounts=[SELECT Id, Name FROM Account];
+
+String firstAccount=myAccounts[0].Name;
+
+## 14. Set
+Set은 원소들을 순서 없이 저장하는 형태의 자료구조다. 또, 중복 원소를 가지고 있지도 않다. 그렇기 떄문에, 보통은 <b>계정 ID 값들을 담는 요소로 많이 사용된다.</b>
+
+> Set<ID> accountsID =new
+&nbsp;&nbsp;&nbsp;Set<ID>{'001d000000BOaHSAA1','001d000000BOaHTAA1'};
+
+> List<Account> accounts=[SELECT Name FROM Account WHERE Id IN :accounIds];
+
+## 15. Map
+키-값이 역인 구조의 자료구조 형태다. 각 key 값은 하나의 값과 연결된 값이다. 당연히 키 값은 고유한 값으로 되어 있어야 하고,  예시로 보면
+
+> Map<Id, account> accountMap =new Map<Id,account>([SELECT Id, Name FROM Account]);
+
+> Map<Id, segment> CollectionID=new Map<Id, segment>([SELECT Id, Segment FROM CDP]);
+
+다음과 같이 Map을 선언하는 문장을 했을 때, 
+
+
+
+
 
