@@ -26,6 +26,6 @@ bulkification은 한국어로 번역한 그대로 테이블의 데이터를 레�
 ## SOQL과 SML 작업 최적화
 * 설명: SOQL 쿼리문이나 DML(INSERT, Update, Delete) 작업을 진행하는데 있어서 각 레코드에 1대 1로 대응하기 보다는 묶음 단위로 작업을 진행할 수 있다.
 
-* 장점: 
+* 장점: This approach reduces the total number of database queries and DML operations that take place in a single transaction, conserving system resources and avoiding collisions with Salesforce governor limits.
 
 https://force.land/salesforce-level-up-the-bulkification-blueprint-0fcfb39c0b18

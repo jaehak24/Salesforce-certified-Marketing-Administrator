@@ -158,6 +158,12 @@
 ## Marketing Cloud admin has been asked to update theri Marketing Cloud SFTP user password. Where in Setup could they accomplish this task?
 > Data management
 
+## NTO was given a set of requirements from their fovernance team to protect against misuse of customer data. One item mandated Marketing Cloud users should NOT be able to export data without approval from the governance team, however, users should still be able to view data within the syste. Which feature would allow compliance with this requirement?
+> Export Emil Allowlist
+
+## what is smart capture?
+> 
+
 
 dump test 참조
 
