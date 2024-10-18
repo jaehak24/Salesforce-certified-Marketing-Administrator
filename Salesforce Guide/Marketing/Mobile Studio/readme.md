@@ -63,3 +63,8 @@ these 3 could be contact key
 # Subscriber key
 unique identifier for a contact in MC
 > contact key=subscriber
+
+# Channel identifiers
+* Email studio: email addresses
+* Mobile connect- Mobile ID
+* Mobile push- Device Id
