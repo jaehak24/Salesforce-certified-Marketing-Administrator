@@ -45,3 +45,7 @@ https://www.youtube.com/watch?v=EQU7wrFbZRM&list=PL_o00w2Z5LYEt646E-F5IOfYsWs1Se
 
 * Engage your social community
 > Join the social conversation in real-time. Triage & prioritize posts
+
+
+# Mobile connect configuration page
+![alt text](image.png)
