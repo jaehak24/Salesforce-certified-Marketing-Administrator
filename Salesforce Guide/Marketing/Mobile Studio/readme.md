@@ -49,3 +49,17 @@ https://www.youtube.com/watch?v=EQU7wrFbZRM&list=PL_o00w2Z5LYEt646E-F5IOfYsWs1Se
 
 # Mobile connect configuration page
 ![alt text](image.png)
+
+
+# Contact key 
+unique identifier for a contact in Marketing cloud -user defiened
+
+* email
+* EMP -0012321
+* 00213123 
+
+these 3 could be contact key
+
+# Subscriber key
+unique identifier for a contact in MC
+> contact key=subscriber
