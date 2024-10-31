@@ -68,3 +68,50 @@ unique identifier for a contact in MC
 * Email studio: email addresses
 * Mobile connect- Mobile ID
 * Mobile push- Device Id
+
+
+# Contact  ID 
+Unique Identifier for a contact in Marketing Cloud
+
+
+All contacts 
+* when you send communication to a contact, they get added to all Contacts
+* You can have contacts added to All contact through Marketing Cloud Channels, synchronized Data Sourcees, API Calls and File Imports
+* 또, 마케팅 communication을 하지 않은 고객이라도 contact에 있을 수 있음. (Data cloud -> Makreting cloud)
+
+
+
+Email studio VS Contact Data Linking
+> Use Data Realationship for linking Data Extension- cannot use Contact Data
+
+All other channel apps -use attribute froups in Contact Builder for linkin data extension
+> user attribute groups linkage for linking data to Contact
+
+
+# Contact Deletion
+
+Defaul it 14 days
+
+
+# contact deletion progress
+![alt text](image-1.png)
+
+* total: shows the sum of all contact delete requests initiated during time spent
+
+* Complete: shows the sum of all contact delete requests made in the specific periood
+
+* Processing: shows the sum of all contact deltet requests made in the specific time priod
+
+* invalid
+
+# Contact Delete location
+
+-> Contact configuration -> contact Delete
+
+
+# Parameter managament
+* Set up or edit the tracking parameter that are apeended to ther links in message sent
+
+* Parameters you configure here are applied to all messages sent from your business unit
+
+* Before using the Parameter Manager, activate the Webanalytic connector in your account
