@@ -4,4 +4,9 @@
 
 ![alt text](image.png)
 
-## Event
+
+## Interaction Definitions
+>https://developer.salesforce.com/docs/marketing/personalization/guide/interaction-definitions.html
+
+
+

@@ -1,1 +1,10 @@
-https://help.salesforce.com/s/articleView?id=sf.mc_pers_salesforce_sales_service_cloud_connector_api_token.htm&type=5
+## Event API
+참조 링크
+> https://developer.salesforce.com/docs/marketing/personalization/guide/event-options-salesforceinteractions.html
+
+interaction 오브젝트는 다음곽 같이 구조를 가지고 있다.
+
+
+>Interface Interaction {<br>
+&nbsp;&nbsp;&nbsp;&nbsp; name: string; 
+<br> }
