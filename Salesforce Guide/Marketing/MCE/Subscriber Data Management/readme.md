@@ -69,7 +69,14 @@ email studio -> subscribers -> profile management
 > 고객이 admin이 만든 publication list를 확인하지 못한다면 해당 list에 public list 옵션이 체크되지 않을 수 있다.
 
 
-###  
+#  sample test
+### What data type should you ues to set the ID on a data extension?
+> Text
+ string 아님
+
+ ### what is the unique identifier on a data extension
+> Primary key
+subscriber key 아님
 
 
 

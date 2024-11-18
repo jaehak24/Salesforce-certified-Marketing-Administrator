@@ -62,4 +62,4 @@ retention can be reseted with the option called
 
 ### In contact builder you can add single record in DE, but can't be happened in email studio
 
-###
+
