@@ -264,4 +264,9 @@ non-scope by user란 말은 시스템 계정, 거의 어드민이다. 그렇기 
 > 고객의 어떤 해동 또는 ,API 등등 외부의 작용으로 발송 하게되는 프로세스
 
 
-# 
+# 38. Northern Trail Outfitters wants to drive additional online sales. They are interested in using Einstein to recommend similar items to customers during the checkout process. Which two terms would they add to their website to accomplish this?
+
+1. Recommendation Code
+> 아인슈타인 추천인 코드 관련 JS 코드
+2. Email Conversion Code
+> 고객의 행동, 움직임 등등과 관련된 JS 코드
