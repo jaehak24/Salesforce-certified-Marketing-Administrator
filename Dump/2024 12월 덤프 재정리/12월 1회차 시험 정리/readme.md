@@ -270,3 +270,128 @@ non-scope by user란 말은 시스템 계정, 거의 어드민이다. 그렇기 
 > 아인슈타인 추천인 코드 관련 JS 코드
 2. Email Conversion Code
 > 고객의 행동, 움직임 등등과 관련된 JS 코드
+
+# 39. An email marketing manager is planning to send a promotional email to one million subscribers. Which data structure should be used?
+> Data extension
+
+data extension을 활용하는것이 대용량 발송면에서 호환성이나, 사용 면에서 유용하다.
+
+# 40. Setup Assistant provides information and resources for configuring a new Marketing Cloud account. Which two topics does Setup Assistant cover?
+(choose 2)
+보기 중 최우선 순위로 선택하여야 하는 것은 다음 2 옵션을 선택해야, 기본적인 마케팅 클라우드 운영이 가능하다.
+1. Setting up data structure
+2. Managing the Enhance SFTP 
+> 인입 또는 reporting의 출력을 위해서는 SFTP에 대한 설정을 진행해야 한다.
+
+# 41. Northern Trail Outfitters has Marketing Cloud users who need data extension View and Update permissions for campaigns related to B2C sales, but not any permissions for campaigns related to B2B sales. How should they accomplish this?
+B2B 세일즈 팀과 B2C 세일즈 팀에 대한 권한 분리가 필요한데 해당 질문은 저니에 대한</br>
+권한 분리가 필요하다. 그렇다면, 데이터에 대한 권한 분리가 필요하는데 이를 저니를 저장하는
+폴더에 권한을 설정해서 분리가 가능하다.
+> Create seperate folders and add permissions
+
+#### 42 A customer has an eCommerce site and imports data into three data extensions daily: Orders, Order_Details, and Products. The data extensions contain the following information: - Orders: OrderId, CustomerID, OrderNumber, OrderDate, OrderTotal, GrandTotal - Order_Details: ProductId, OrderID, Qty, UnitPrice, ExtendedPrice, Discount - Products: ProductId, SKU, Name, Description, Cost, Price. Which two actions should be taken in Data Designer? ( choose 2)
+Data designer의 데이터 릴레이션 정의에 대한 문제로, 틀린 이유는 제품과 제품 상세 페이지에 대해서 1대 1의 관계를 고려하지 못했기 때문이다.
+결론부터 말하면 정답은
+1. Create a one-to-one relationship between Order_Details and Products.
+2. Create a one-to-many relationship between Orders and Order_Details.
+
+> 자명하게도, '주문'과 '주문 상세'는 1대 다의 관계를 가져야 한다. 
+주문에 대해서 '여러가지' 상세 정보가 표기 될 수 있기 때문에, 주문: 주문상세 는 1:다의 관계를 가진다.
+
+
+> 주문상세와 제품은 주문상세가 여러가지 제품을 가질 수 있지만, 문제에서는 제품 ID 값을 field로 가지기에, 한 주문 코드에
+여러 제품을 가질 수 있어, 주문상세와 제품은 1대 1에 관계를 자긴다.
+
+# 43. Northern Trail Outfitters has five business units in their Marketing Cloud account. All business units should be configured to use the same SFTP directory. How should this setup be achieved?
+> SFTP 보안에 관련된 문제이다. 문제에서는 NTO에 다섯개의 BU가 존재하고, 모든 BU가 한 SFTP 디렉토리를 공유하고 있다고 말하고 있다.
+1. All child business units should have an individual SFTP user
+> 각 BU에 대해 각자의 SFTP 사용자를 가지고 있어야 한다. 이는 각 데이터 전송에 대한 추적이 가능하고(각 SFTP 사용자에 대해)
+파일의 전송 및 버전 관리에 용이하다. 또한 각, 사용자에 대한 권한 계층 관리를 할 수 있기도 하기 때문이다.
+
+## 44.A Marketing Cloud admin is tasked with requesting Marketing Cloud Connect Multi-Org enablement. What consideration should be given to the preference profile centers for this integration?
+1. Multi-org does not support the standard profile preference center for the business units.
+> 복수의 org에 대한 BU의 표준 profile preference center에 대한 지원을 하지 않는다.
+복수 오그에 대한 설정 및 권한 자체는 표준이 아니다. 표준 자체는 단일 BU의 데이터 이관에 따른 profile preference center  관리가 표준이다.
+
+profile preference center 관리 자체는 마케팅 클라우드 email studio 내에서 이루어진다.
+
+#### 45. A large retail company has selected Marketing Cloud and has asked to be fully migrated from their existing platform in three weeks. They have communicated the following: They currently have 3 million customers. They email customers twice a week with no known deliverability issues. Their contract includes one Sender Authentication Package (SAP). Which two responses articulate proper IP warming?(choose 2)
+1. IP ramp-up takes four to six weeks to be able to fully send to all 3 million customers.
+> IP ramp-up(ISP로부터 신뢰를 얻기 위한 작업)은 30~60일정도가 소요된다. (4~9주 정도)
+2. IP ramp-up is important to establish a positive sender reputation.
+> IP ramp-up 작업을 진행해야, ISP로부터 신뢰를 받고, 이메일 마케팅의 발송에 대해서, 스팸으로 처리되는 불상사로부터 벗어날 수 있다.
+
+### 46. A customer will provide a single daily file on the Marketing Cloud SFTP at 3 AM and needs an alert if the file is not present on time. The file needs to be imported into a staging data extension, separated into two different data extensions. Which workflow should meet these requirements?
+> 파일의 SFTP 인입에 대한 알림을 받기 위해선느 File Drop automation이 아닌 scheduled Automation을 진행해야 한다.
+
+
+# 47. What functionality is contained in Journey Builder that does not exist in Automation Studio?
+1. The ability to initiate triggers based on a customer's behavior or interaction with your brand
+> 실시간성으로 처리되는 데이터에 한해서는 Automation
+
+
+#### 47. A Marketing Cloud admin notices Individual Email Results are NOT being pushed back into Sales Cloud for a particular end user. The admin of Marketing Cloud Connect is functioning properly. What should the admin confirm about the data extension?
+> The data extension is located in the Salesforce Data Extensions folder.
+마케팅 클라우드 내에서 발송한 이메일 결과를 담는 데이터가 sales cloud로 데이터가 들어오지 않는 건에 대하여 어디를 점검해야 한다는 질문이다. 발송 결과에 대해서는 shared가 아닌 data extension 폴더에 해당 데이터를 저장한다. 
+
+
+
+##### 48. Northern Trail Outfitters is setting up new hires on its instance of Marketing Cloud, which includes Email Studio, Mobile Connect, and Social Studio. One of the hires needs to manage the operations of all of the North American Business Units. What two roles, custom or standard, could be assigned to this user to meet the requirement? (choose 2)
+1.  Marketing Cloud Administrator
+2.  Marketing Cloud Regional or Local Administrator
+
+ ### 49. A Marketing Cloud admin wants to configure a new keyword for an upcoming SMS campaign. After entering the desired keyword CELEBRATION, the admin notices the keyword is unavailable. What issue could the admin be facing?
+ > Keyword is used within another business unit
+ >> 마케팅 클라우드 내에 있는 키워드는 모든 BU를 통틀어서 유니크하다. 그렇기 때문에 다른 BU에서 사용하고 있다면 마케팅 클라우드 내에서 해당 키워드를 중복으로 생성할 수 없다.
+
+ #### 50. NTO wants to use complex criteria to identify subscribers for a special promotional email. Especially they want to target subscribers who opened or engaged with an email within the last 30 days and live within 10 miles of an NTO store. What should NTO do to create this audience?
+
+복잡한 데이터에 대한 필터 처리는 SQL 쿼리를 통해 처리해야 한다. data filter는 세일즈포스 가이드라인에 따르면 간단한 데이터 처리에 대한 갈림을 위해서 사용된다.
+> SQL Queries
+
+#### 51. What elements of CAN-SPAM should the Marketing Cloud admin ensure are present for each Commercial send?
+> Business name and physical mailing address
+>> CAN-SPAM(마케팅에 대한 규제) 규정을 지키기 위해서는 메일 발송에 있어서 연락이 가능한 수단이 적힌 회사 로고 내지는 이름이 있어야 하며, 이는 1번인 회사 이름과 연락처(이메일)이 이에 해당한다.
+
+#### 52. A customer needs to link demographic information to its contact model in Contact Builder. What type of relationship should be used?
+> 컨택트와 고객의 위치 정보는 일대다 관계로 맵핑되어야 한다.
+
+One-to-Many Relationship
+
+### 53. Northern Trail Outfitters (NTO) has the Discover Reporting Tool. Which two report types could help NTO drive their mobile adoption strategy? (choose 2)
+1. Email Sending Performance Report
+2. Email Performance by Device
+> 이메일 performance report를 통해 전쳉의 bounce rate, ctr 등등을 확인하고 이 중 기기별 performance를 보면서 모바일 도입 전략 지원이 가능하다.
+
+
+ 
+
+#### 54. Northern Trail Outfitters (NTO) hired a new Marketing Cloud admin, who was told all emails come from info@email.nto.com. The previous admin did not leave any documentation. Which aspects would confirm a Sender Authentication Package (SAP) has been set up on the account?
+(choose 2)
+SAP은 마케팅 클라우드의 이메일 마케팅에 있어서 발송인의 신원을 인증케 하는 패키지다. Sender Authentication Package. 영업 대표를 통해서 구매가 가능하며, 패키지 포함 목록으로는 
+ * Domain
+ * Branded link: 해당 회사의 URL을 회사의 도메인으로 변경해서, 일관된 고객 경험을 유지하게 한다.
+ * Dedicated IP address: 회사의 IP 주소를 단일 주소로 고정케 한다.
+ * Reply Mail Management (RMM): 이메일 답변에 대한 관리를 지원하게 해준다.
+
+
+1. Cloudpages personalized URLs are served from cloud.email.nto.com
+> SAP을 회사의 도메인이 고정된다. 클라우드 페이지의 트래킹 url의 도메인이 SAP에서 구입한 회사에 할당된 고정 도메인인지 확인을 해보면, SAP을 구매했는지 아닌지 구별이 가능하다.
+
+2. The login page for Marketing Cloud Users is login.email.nto.com and is branded with NTO colors.
+> 마케팅 클라우드 로그인 시, 계정의 뒤가 cloud.email.nto.com로 고정되고, 회사의 브랜드 로고 색으로 고정이 되어 있으면 이는 SAP을 구매한것이다.
+
+
+### 55. A customer wants Sales Cloud users to create and send Marketing Cloud emails. Which two recommendations should the consultant make?
+(choose 2)
+1. The consultant should enable the Create Email feature on the user Profile in the Sales Cloud.
+> 세일즈 클라우드 사용자가 이메일 생성 및 발송을 진행하기 위해서 기존에 존재하던 세일즈 클라우드 계정의 권한에서 '이메일 생성하기' 권한을 활성화 해야 한다.
+
+#### 56. Northern Trail Outfitters uses Marketing Cloud Connect to leverage Sales Cloud data in their journeys. A user recently reported the data coming from Sales Cloud is NOT up to date. Where should the Marketing Cloud admin begin troubleshooting?
+
+1. Contact Builder > Data Sources
+2. Contact Builder > Synchronized Data Extensions
+
+#### 57. A Marketing Cloud admin has scheduled a query on a daily basis. They notice the query sometimes fails to execute. How would the admin ensure a notification is received when the query fails?
+> Add their Email Address in the automation Runtime Error or Skipped Run Notification Settings
+
