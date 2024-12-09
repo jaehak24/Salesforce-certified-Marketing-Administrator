@@ -395,3 +395,13 @@ SAP은 마케팅 클라우드의 이메일 마케팅에 있어서 발송인의 �
 #### 57. A Marketing Cloud admin has scheduled a query on a daily basis. They notice the query sometimes fails to execute. How would the admin ensure a notification is received when the query fails?
 > Add their Email Address in the automation Runtime Error or Skipped Run Notification Settings
 
+
+
+#### 58. A Marketing Cloud admin is asked to append an Urchin Tracking Module (UTM) variable string to links in emails. What functionality would allow this?
+> Web Analytics Connector
+
+이메일의 UTM을 추가하는 것은 Web Analytic Connector에서 관리한다, + GA 4 UTM
+
+#### 59. A Marketing Cloud Administrator noticed a File Drop Automation has been failing on the Import File activity. The automation is configured with a filename pattern, so the filename is expected to begin with customer import. The import is configured to look for a file named Customer import %%Year%%%% Month%%%%Day%%.csv, however, the admin notices the filenames Include seconds and milliseconds what should the admin do to fix the issue?
+초와 밀리세컨즈가 포함된 파일이더라도 파일을 임포트하기 위해서는 시간 형식으로 파일을 받기 보다는 import file activity로 설정해야 이름에 초나 밀리세컨즈로 해도 파일을 받을 수 있다.
+> Use %%FILENAME_FROM_TRIGGER%% in the Import File Activity
