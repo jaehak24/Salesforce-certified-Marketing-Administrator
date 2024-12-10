@@ -241,6 +241,8 @@ eu의 고객 행동 추적이 안되므로, 해당 고객에 대해서 선택을
 
 # 35. Northern Trail Outfitters enabled enhanced sender profile feature. The NTO admin wants to create personalized email sends to their customers using the names of specific customer service representatives. While the content of the send remains same across the email send, the marketer wants the From Name to appear different for each subscriber. What are next steps for email personalization?
 
+틀림 1회
+
 1. Create a workflow to update member status.
 2. Create a sender profile that uses AMPscript to dynamically pull information from the subscriber attributes populated by Salesforce information.
 
@@ -405,3 +407,175 @@ SAP은 마케팅 클라우드의 이메일 마케팅에 있어서 발송인의 �
 #### 59. A Marketing Cloud Administrator noticed a File Drop Automation has been failing on the Import File activity. The automation is configured with a filename pattern, so the filename is expected to begin with customer import. The import is configured to look for a file named Customer import %%Year%%%% Month%%%%Day%%.csv, however, the admin notices the filenames Include seconds and milliseconds what should the admin do to fix the issue?
 초와 밀리세컨즈가 포함된 파일이더라도 파일을 임포트하기 위해서는 시간 형식으로 파일을 받기 보다는 import file activity로 설정해야 이름에 초나 밀리세컨즈로 해도 파일을 받을 수 있다.
 > Use %%FILENAME_FROM_TRIGGER%% in the Import File Activity
+
+
+
+### 60. Northern Trail Outfitters has noticed an issue with their sends today. Which two links in Setup Home could be used to troubleshoot the issue? (choose 2)
+1. System Status
+> 세일즈포스의 실시간 서비스를 모니터링할 수 있는 링크다.
+
+2. Failed Sends
+> MC에 있는 이메일 발송 중 미발송 건에 대한 로깅을 할 수 있는 링크다.
+
+
+### 61. When customers use the Marketing Cloud default Profile Center link to unsubscribe, it causes users to not receive emails from any other business unit. What could explain this behavior?
+> The Business Unit Unsubscribe Settings is set to Subscribers will be unsubscribed from all business units in the Enterprise
+
+MC의 profile center의 기능 중 하나로 [Subscribers will be unsubscribed from all business units in the Enterprise] 라는 기능이 존재해
+BU subscriber setting에서 고객을 Enterprise에서 구독을 해제할 수 있다.
+
+### 62. Northern Trail Outfitters (NTO) only has enough licenses for their staff. A campaign manager is out on parental leave. How should NTO create a new user to fill in?
+> <b>Disable</b> the campaign manager's user and create a new user
+
+
+#### 63. When setting up a Send Log data extension for long-term success in Salesforce Marketing Cloud, Northern Trail Outfitters should consider the following three key factors
+1. Add custom fields not included in the Send Log Template
+> amp 스크립트 또는 Personalization string과 같은 데이터들은 template에 없는 데이터들로 분석과, auditing(회사의 마케팅 평가) 
+2. Log attribute data necessary for auditing communication
+> auditing을 위해서 subscriber key, emailAddresses, relevant metadata등등을 로깅해야 한다.
+3. Apply an appropriately-scoped Data Retention period
+> data extension에 대해서 너무 많이 쌓인 데이터에 대해서는 retention이 가해여쟈 하기에 적절한 retention 셋팅이 필요하다.
+
+
+#### 64. A Marketing Cloud admin wants to create a suppression list for hard-bounced email addresses Where could the details be found?
+> Query the Bounce Data View
+
+마케팅 클라우드 내에는 bounce 되어 있는 
+
+
+#### 65. Northern Trail Outfitters wants to segment audiences based on Sales Cloud data. Where would their Marketing Cloud admin configure Sales Cloud Objects to be synced and leveraged in Marketing Cloud?
+> Contact Builder > Data Sources
+
+세일즈 클라우드 데이터 중 일부를 세그먼트해서 sync 하기 위해서는 Data sources에서 atrribute를 정의함에 따라 진행할 수 있다.
+
+### 66. How are publication lists used in the Marketing Cloud?
+> To allow subscribers to opt-down/out instead of unsubscribing from all.
+
+publication list는 고객의 구독을 관리하는 링크다.
+
+##### 67. While setting up Marketing Cloud Connect, a Marketing Cloud admin navigates to the Marketing Cloud tab in Sales Cloud to complete the integration. The admin then receives the following error message: - Insufficient User Permissions. You have not been designated as an integrated Marketing Cloud user. Contact your system administrator. The admin notices the Marketing Cloud for AppExchange Admin option is selected when looking at the user settings. What action should correct the issue?
+> Apply the Marketing Cloud for AppExchange User option as well
+
+'Insufficient User Permissions. You have not been designated as an integrated Marketing Cloud user' 다음과 같은 에러가 나오는 이유는, 마케팅 클라우드 어드민 권한은 있지만 app exchange에 대한 권한이 없기 때문에 나오는 에러이다.
+
+### Business Units are available in which tenant type?
+1. Enterprise 1.0
+>  Publish or On-Your-Behalf Business Units. 과 같은 BU를 지원한다.
+2. Enterprise 2.0
+> 모든 BU 권한이 가능하며, 자녀 부모 같은 상속 관계도 가능하다.
+
+
+### A _______ in Contact Builder provides a single view of a customer and displays all their interactions with your brand?
+> contact record
+
+
+### A contact is managed and related through the different channels using a single _____. This is a unique identifier that you assign to a contact?
+> Contact Key
+
+
+## What is used by Salesforce to uniquely identify a contact throughout Marketing Cloud?
+> Contact ID
+
+
+## _________ are used to categorize distinct subgroups of contacts?
+> Populations 
+
+###  Which type of data source connects two different contact data tables to each other based on a particular field?
+> Attribute Group
+
+
+### 68. By default, the data extension retention policy deletes unused data extensions after how long?
+> 6 months
+
+사용하지 않는 DE는 <b>6개월 뒤</b>에 지워진다.
+
+# 69. Which of the following statements applies to retention settings?
+> You cannot remove the configured data retention settings once you configure them.
+
+## 70. What do you use to synchronize Sales Cloud and Service Cloud data with Marketing Cloud?
+> Marketing Cloud Connect
+
+## 71. What should you create to synchronize objects from Service Cloud, pull the information into Marketing Cloud, and share contact data with business units?
+> Create a synchronized data extension.
+
+## 72. What value do you need to review the status of a Contact Delete request?
+> Operation ID
+
+contact delete에 대한 요청에 대해서 확인을 하기 위해서는 해당 작업에 대한 operation ID 가 필요하다.
+
+## Where do contact deletions take place in Enterprise 2.0 accounts?
+> Top-level accounts and all business units in the specified Enterprise 2.0 account.
+
+
+## A ______ is a collection of components and applications that makes the connection between your Salesforce CRM and Marketing Cloud accounts work?
+> Managed Package
+
+
+# Before installing the managed package, what CRM feature needs to be enabled?
+> Record types on the Contact and Lead objects
+
+# Where do you integrate Marketing Cloud Connect users?
+> Marketing Cloud Setup
+
+## A person in this role assigns Marketing Cloud roles to users and manages channels, apps, and tools?
+> Marketing Cloud Administrator
+
+
+## A person in this role views cross-channel marketing activity that results in the Marketing Cloud?
+> Marketing Cloud Viewer
+
+# Marketing Cloud allows up to _______ FTP users per MID?
+> 10
+
+# _____________________________ store information about individual people by combining certain account and contact fields into a single record?
+> Person Account
+
+
+#### 73. Northern Trail Outfitters (NTO) has a franchise model which allows locally-owned stores to operate under the corporate umbrella. They are required by corporate policy to email each franchisee a monthly statement, but the statement cannot be publicly accessible. Which Marketing Cloud product should NTO purchase as a solution?
+> Distributed Sending
+
+
+#### 74. Set up or edit the tracking parameters that are appended to the links in messages sent from your Salesforce Marketing Cloud account using?
+> Parameter Manager
+
+
+#### 75. Northern Trail Outfitters (NTO) wants to limit who can receive Marketing Cloud tracking data via email from their Account to any email associated with their domain (ntoretail.com). Which steps should be taken to implement this? (Choose 2)
+1. Enforce Export Email Allowlist
+2. Add a Domain to the Export Email Allowlist
+
+
+### 76. Use ________________________________ to copy the design of a journey, data extension, attribute group in the contact data model, or automation, and deploy it to other Marketing Cloud business units or enterprises?
+> Deploy management
+
+
+### 77. NTO wants to format links for consumption by Google Analytics 360. NTO wants to make sure they do not have any data which could be considered Personally Identifiable information (PII) within their links. Which three values could be used as personalization strings in query string parameters?(choose 3)
+1. Subscriber ID
+2. Product Code
+3. Application ID
+
+
+ 이메일과 이름은 GA 정책에 어긋난다.
+
+ # 78. Where in Setup can you edit email Headers & Footers?
+ > Account setting
+
+ #### 79. A Marketing Cloud admin is configuring the Marketing Cloud data model for the first time. They are using Journey Builder to send messages to customers, based on if there has been an order or not. There are two existing data model, Customers and Orders: - Customers contain information about subscribers including Email Address, First Name, Last name. - Orders contains information about the orders and include the unique identifier of the customer. In which two ways should the admin configure Data Designer to allow this data to be used within a Journey?(choose 2)
+ 1. Link the Orders data extension to the Customers data extension using a One-to-Many relationship
+ 2. Link the Customers data extension to the data model using the Customer ID
+
+
+# 80.Which is NOT a Data Retention delete option?
+> Data extensions
+
+
+
+# 81. A customer is interested in designing a solution to ensure that subscribers only receive categories of emails that they want to receive. The built-in subscription center will be used as part of the solution. Which feature should be utilized to make this happen?
+
+> Publication center
+
+메일에 대한 발송 처리에 있어서 고객이 원하는 목록에 따른 발송을 하기 위해서는, publication center를 통한 설정으로 고객이 원하는 취향에 따라 발송이 되게 설정한다.
+
+
+
+# 82. Which of the following statements applies to retention settings?
+> You cannot remove the configured data retention settings once you configure them.
