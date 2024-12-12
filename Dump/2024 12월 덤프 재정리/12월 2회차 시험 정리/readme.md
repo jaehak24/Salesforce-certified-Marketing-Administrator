@@ -329,3 +329,116 @@ Footwear의 unsubscribe 고객들을 가져오든 NTO와 분리 관리를 할 �
 > Block
 
 ISP가 해당 ip에 대한 메일 발송을 방지한다는 라벨로서, block을 사용한다
+
+
+#### 59. A customer frequently holds seminars and other events to interface with their customers. They plan to do the following: - Use SmartCapture forms to write data into event registration data extensions. - Cross-reference the records in each registration data extension with corresponding invitation email sends. - Send a follow-up email to customers who click on the registration link in the invitation email, but do not complete registration. Which skill is needed to build an efficient solution?
+> SQL
+
+
+#### 60. Which two statements are correct about Send Logging?
+1. AMPscript can be used to pull data from Send Logs for use within emails.
+2. SQL Query Activities can reference Send Logs in combination with system data views.
+
+
+#### 61. A publishing company has presented the following: 1. A need to send renewal reminders to customers whose subscriptions expire in 15 days and 7 days. 2. A campaign needs to be created and managed by a general marketing user who will not have administrative rights and who is not technical. 3.The customer's expiration date is included in the data file. What component should the customer's solution include?
+
+1. Data Filter
+2. Template-based emails
+3. Automation Studio
+
+
+#### 62. During discovery, the customer outlines data requirements and the anticipated use of Marketing Cloud with the following criteria: 1. Customer data will be fully refreshed every night via Import activity from the customer's data warehouse. 2. Contact records will be augmented by relational data tables via Contact Builder. 3. The customer data file will contain 5M records with 40+ attributes. 4. One attribute will house HTML code, 1000 characters max, that will be used to populate Account Access content areas in emails. 5. A customer ID will be used as the unique identifier for each contact. Which statement differentiates the use of data extensions over lists?
+> Data extensions are necessary for Contact Builder
+
+#### 63. Analyst of The Northern Trail Outfitters (NTO) marketing team needs to pull email metrics for an upcoming quarterly company meeting. These metrics need to be reported per email campaign for each of NTO's Business Units: Number of Sends, Delivery Rate, Overall Bounce Rate, Block Bounce Rate, Open Rate, Click Rate, Complaint Rate, Unsubscribe Rate. Which email report should NTO's Marketing Analyst pull from Marketing Cloud to get this information?
+> Campaign Email Tracking Report
+
+
+#### 64. Northern Trail Outfitters has Marketing Cloud users who need data extension View and Update permissions for campaigns related to B2C sales while restricting access to campaigns related to B2B sales. How should they accomplish this?
+> Create separate folders and add permissions
+
+
+#### 65. A Marketing Cloud admin is asked to understand how a certain content area within a Triggered Send Email is performing. Which report should be used?
+> Impression Tracking for Triggered Sends
+
+#### 66. Northern Trail Outfitters wants to optimize their eCommerce site by sending a follow-up Email to a customer alter an online purchase is made. What feature could be used to solicit website feedback without navigating away from the email?
+> Email content block
+
+#### 67. A Marketing Cloud admin has configured a Tracking Extract which includes all subscriber attributes for their global regions. However, the admin notices accented characters in the customers' names appear jumbled in the extracted file. Which two settings could solve this issue
+1. Change Character Encoding to UTF-8
+2. Select Unicode Output
+
+
+#### 68. A Marketing Cloud admin wants to automatically unsubscribe customers who respond to marketing emails asking to be removed from the mailing list. Which two steps should the admin take to enable this functionality?
+1. Ensure a Custom response is enabled for Automated Response in Reply mail Management
+2. Select Unsubscribe Manual requests in Reply Mail Management
+
+
+#### 69. Northern Trail Outfitters (NTO) is a global brand that includes many subsidiary brands under the parent umbrella. NTO is the Enterprise business unit and also has a child business unit used for sending promotional emails. How should the rest of the business units be organized?
+> Create child business units for each brand and nest another level of child business units for GEOs.
+
+
+#### 70. Northern Trail Outfitters has Imported a file Into All Subscribers. They then received a results file stating admin@example.com could NOT be imported. Which error code would the file contain for this record?
+>  List Detective
+
+
+#### 71. A Marketing Cloud admin wants to create an SFTP User for the first time. Which two considerations should be taken when configuring an SFTP User?
+1.  By default, the username is the MID for the current Marketing Cloud MID.
+2. Minimum password length is 12 characters.
+
+
+#### 72. What are entry source types for Journey Builder?
+> Data Extension, Audience Studio, API Event, Date Based Event
+
+
+#### 73. Northern Trail Outfitters wants to use Synchronized Data Sources to sync Contact data from Salesforce CRM. However, they only want to sync records they would be able to send to reducing the amount of data being brought over. Which two filtering options could be used when configuring the Contact synced object?
+
+1. Select all records with an email address
+2. Select all records which are active in All Subscribers
+
+
+#### 74. Northern Trail Outfitters was given a set of requirements from their governance team to protect against misuse of customer data. One item mandated Marketing Cloud users should NOT be able to export data without approval from the governance team, however, users should still be able to view data within the system. Which feature would allow compliance with this requirement?
+> Export Email Allowlist
+
+
+##### 75. Northern Trail Outfitters wants to have specific permission restrictions applied to all users in a business unit. How should they accomplish this?
+> Assign a role to the business unit
+
+
+#### 76. Einstein Recommendations uses data extensions to store user-facing information. How is this data passed to Marketing Cloud?
+> Collect Tracking code
+
+
+#### 77. A Marketing Cloud admin wants to ensure no one could access the API with their Marketing Cloud user credentials. Which security setting would control this behavior?
+> Deselect ‘Enable Username and Password for Web Services’
+
+#### 78. A Northern Trail Outfitter’ (NTO) subscriber clicks a link in an NTO email. Prior to the clicking, the subscriber had a bounces status in Marketing Cloud. What are the effects of the click to the subscriber’s status?
+> Status is changed to Active and the bounce count is unchanged
+
+
+#### 79. What should be confirmed to ensure Journey Builder directs the subscribers correctly?
+> Journey Data is used for the Decision Split.
+
+
+#### 80. A Marketing manager requests to receive an email, once a week, with high-level metrics in a standard format. Specifically the manager wants to know how many emails were sent in the last week. What location and activity would allow the Marketing Cloud admin to complete the request?
+> Email Studio: Select “Account Send Summary” in Tracking Reports and schedule a weekly report to be sent
+
+
+#### 81. A Marketing Cloud admin is setting up Northern Trail Outfitter’s newest business units and several users to assign to the new business units. How would the admin assign users to the business units?
+> Search for the individual user, select their name, and click Manage Role under Business Units.
+
+#### 82. A Marketing Cloud admin is asked to add a set of four tracking parameters automatically to all the links in an email sent via email studio. Which solution should the admin suggest?
+> Web Analytics Connector
+
+
+#### 83. You can receive Audit Trail records either through: (Pick Two)?
+1. Marketing Cloud Automation Studio Data Extracts
+2. REST API extracts.
+
+#### 84. Which gives you access to data not available via standard tracking functions and to obtain run-time information about email send attributes?
+> send Logs
+
+
+#### 85. A Marketing Cloud admin needs to create a zipped file for use outside of Marketing Cloud. What should the admin consider? (Choose two.)
+1. A File Transfer Location must be configured after using the Data Extract Activity
+2. The fields included in a data extract file vary according to the Extract Type you choose
