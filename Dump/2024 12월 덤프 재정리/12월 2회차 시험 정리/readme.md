@@ -442,3 +442,31 @@ ISP가 해당 ip에 대한 메일 발송을 방지한다는 라벨로서, block�
 #### 85. A Marketing Cloud admin needs to create a zipped file for use outside of Marketing Cloud. What should the admin consider? (Choose two.)
 1. A File Transfer Location must be configured after using the Data Extract Activity
 2. The fields included in a data extract file vary according to the Extract Type you choose
+
+
+#### 86. A Contact Delete request has been processed for subscribers who have been sent an email to previously in a northern action did NOT target all contacts in their account and a significant number of contacts which are still remaining. Which two data would still exist in the account?
+1. Contact data in non-sendable data extensions
+2. General tracking data at the job level
+
+
+#### 87. Northern Trail Outfitters wants to set up a welcome journey that leverages customer data across three data extensions: Customers, Orders, and Products. What is the best way to facilitate this within Contact Builder?
+
+> Create a single Attribute Group that links Customers to Contacts, Orders to Customers, and Products to Orders.
+
+
+#### 88. A customer is collecting data from a Smart Capture form that stores submissions in a data extension. The email is to be sent to the marketing manager each morning that contains the previous days submissions as a CSV attachment. Assuming that the customer has the attachments feature enabled. Which automation workflow will accomplish this?
+> Scheduled Automation: SQL Query > Data Extract > Transfer File > Send Email
+
+
+#### 89. A customer will provide a single daily file on the Marketing Cloud SFTP at 3 AM and needs an alert if the file is not present on time. The file needs to be: Imported into a staging data extension.Separated into two different data extensions. Which workflow should meet these requirements?
+> Scheduled Automation: File Transfer Activity > Import File Activity > SQL Query Activity 1 > SQL Query Activity 2
+
+3시가 명시되어 있으므로,  scheduled automation을 하는 것이 좋고, 
+File transfer activity를 통해 SFTP나 encrypted된 파일에 대해서 MC 내 저장소로 처리를 하고
+Import file activity를 통해 MC 내 저장소로 이동해야 한다
+
+
+#### 90. Northern Trail Outfitters runs a nightly automation consisting of a File Transfer and a File Import. Following an update from the engineering team, the automation began failing. The Marketing Cloud admin suspects the CSV file now has an invalid format. How could the admin receive a file of the bad data rows to confirm this theory?
+> Update the Import Definition to include a notification email address
+
+file transfer가 문제가 되면서 잘못된 CSV 파일이 import의 input으로 들어오면서 뒤에 오는 Import definition에서 해당 에러를 잡아야 한다. 
