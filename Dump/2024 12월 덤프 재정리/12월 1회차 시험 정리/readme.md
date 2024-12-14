@@ -54,7 +54,7 @@ Contact는 발송을 한 전화번호부에 있는 사람이고 Subscriber는 �
 # 11. Why is whitelisting the entire set of IP ranges for your region a best practice?
 
 1. It ensures Salesforce login pools can process end users' login authentication when accessing Salesforce.
-
+> 세일즈포스 로그인에 대한 로그인 풀을 제공해준다.
 2. It avoids unintended service disruptions due to movement between primary and secondary instances.
 > instance 이동에 있어서 이동시에도 문제가 없게 하기 위해 전 지역에 대한 ip 허용이 필요하다.
 

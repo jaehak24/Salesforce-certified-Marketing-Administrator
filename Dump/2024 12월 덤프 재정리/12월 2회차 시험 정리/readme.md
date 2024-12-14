@@ -470,3 +470,6 @@ Import file activity를 통해 MC 내 저장소로 이동해야 한다
 > Update the Import Definition to include a notification email address
 
 file transfer가 문제가 되면서 잘못된 CSV 파일이 import의 input으로 들어오면서 뒤에 오는 Import definition에서 해당 에러를 잡아야 한다. 
+
+
+
